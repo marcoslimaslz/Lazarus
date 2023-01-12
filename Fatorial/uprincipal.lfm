@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 460
+  Height = 107
+  Top = 248
+  Width = 348
+  Caption = 'Fatorial'
+  ClientHeight = 107
+  ClientWidth = 348
+  LCLVersion = '1.8.4.0'
+  object ToggleBox1: TToggleBox
+    Left = 256
+    Height = 25
+    Top = 32
+    Width = 75
+    Caption = 'Resolver'
+    OnChange = ToggleBox1Change
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 83
+    Height = 23
+    Top = 32
+    Width = 170
+    MaxLength = 4
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 83
+    Height = 23
+    Top = 58
+    Width = 170
+    OnKeyPress = Edit1KeyPress
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 40
+    Height = 15
+    Top = 32
+    Width = 29
+    Alignment = taRightJustify
+    Caption = 'Valor:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 58
+    Width = 55
+    Alignment = taRightJustify
+    Caption = 'Resultado:'
+    ParentColor = False
+  end
+end
